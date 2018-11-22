@@ -1,0 +1,62 @@
+<html>
+<head>
+  <title>Sample</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../thirdparty/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../stylesheets/font-awesome-4.7.0/css/font-awesome.min.css">
+
+  <script type="text/javascript" src="../thirdparty/jquery.min.js"></script>
+    </head>
+    <body>
+        
+     <table ng-show="dg.showDgList" class="ng-scope" ng-repeat="du in dg.du track by $index">
+           <tbody><tr ng-click="toggleDUList(du, $event)" class="trprojectname">
+              <th colspan="5" class="">
+                <i ng-class="{'fa-minus':du.showDuList, 'fa-plus':!du.showDuList}" class="fa fa-minus" aria-hidden="true"></i>
+                <strong class="ng-binding"> DGTL_DLV_APPI_Studio - <a ng-show="deviceType.isDesktop" class="im ownername ng-binding" href="im:&lt;sip:dummysanjay.gurjar@accenture.com&gt;">dummysanjay.gurjar</a> <span class="ownername ng-binding ng-hide" ng-hide="deviceType.isDesktop">dummysanjay.gurjar</span></strong>
+            </th>
+        </tr>
+        <tr ng-show="du.showDuList" class="reqtablecols">
+            <th class=""><span style="font-weight: bold;">Review Type</span></th>
+            <th class=""><span style="font-weight: bold;">Review Date</span></th>
+            <th class=""><span style="font-weight: bold;">Reviewer</span></th>
+            <!-- <div class="rTableHead" style="width: 15%;"><span style="font-weight: bold;">End Date</span></div> -->
+            <th class=""><span style="font-weight: bold;">Status</span></th>
+            <th ng-show="tabName == 'open'" class=""><span style="font-weight: bold;">Pending / Action Items</span></th>
+            <th ng-show="tabName != 'open'" class="ng-hide">Closure Date</th>
+        </tr>
+        </tbody><!-- ngRepeat: project in du.projects track by $index --><tbody ng-show="du.showDuList" class="ng-scope" ng-repeat="project in du.projects track by $index">
+            <tr ng-click="toggleProjectList(project, $event)">
+               <td class="" colspan="5"><span class="du-name ng-binding"><i ng-class="{'fa-minus':project.showReviewList, 'fa-plus':!project.showReviewList}" class="fa fa-minus" aria-hidden="true"></i> Fusion Analytics Part 2 - <a ng-show="deviceType.isDesktop" class="ownername ng-binding" href="im:&lt;sip:ananda.tkishore@accenture.com&gt;">ananda.tkishore</a> <span class="ownername ng-binding ng-hide" ng-hide="deviceType.isDesktop">ananda.tkishore</span></span></td>
+           </tr>
+           <!-- ngRepeat: review in project.reviews track by $index --><tr ng-show="project.showReviewList" class="ng-scope" ng-repeat="review in project.reviews track by $index">
+            <td class="breaklength ng-binding">Startup Review</td>
+            <td class="breaklength ng-binding">02/21/2018</td>
+            <td class="breaklength ng-binding">anandraj.pulluru</td>
+            <td class="breaklength ng-binding">Planned</td>
+            <td ng-show="tabName == 'open'" class="breaklength ng-binding">
+                2/2
+                <span data-target="#reviewDetailsModal" data-keyboard="false" ng-click="editReview(review.RequestID)" class="fa fa-pencil edititem pull-right" title="Edit"></span>
+            </td>
+            <td ng-show="tabName != 'open'" class="breaklength ng-binding ng-hide">
+                02/21/2018
+                <span data-target="#reviewDetailsModal" data-keyboard="false" ng-click="editReview(review.RequestID)" class="fa fa-pencil edititem pull-right" title="Edit"></span>
+            </td>
+        </tr><!-- end ngRepeat: review in project.reviews track by $index --><tr ng-show="project.showReviewList" class="ng-scope" ng-repeat="review in project.reviews track by $index">
+            <td class="breaklength ng-binding">Gate 5</td>
+            <td class="breaklength ng-binding">10/10/2018</td>
+            <td class="breaklength ng-binding">anandraj.pulluru</td>
+            <td class="breaklength ng-binding">Reviewed &amp; Pending action items</td>
+            <td ng-show="tabName == 'open'" class="breaklength ng-binding">
+                28/28
+                <span data-target="#reviewDetailsModal" data-keyboard="false" ng-click="editReview(review.RequestID)" class="fa fa-pencil edititem pull-right" title="Edit"></span>
+            </td>
+            <td ng-show="tabName != 'open'" class="breaklength ng-binding ng-hide">
+                03/29/2018
+                <span data-target="#reviewDetailsModal" data-keyboard="false" ng-click="editReview(review.RequestID)" class="fa fa-pencil edititem pull-right" title="Edit"></span>
+            </td>
+        </tr><!-- end ngRepeat: review in project.reviews track by $index -->
+    </tbody><!-- end ngRepeat: project in du.projects track by $index -->
+</table>
+    </body>
+    </html>

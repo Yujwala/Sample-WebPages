@@ -1,0 +1,33 @@
+body{
+    background-color: #b9315a;
+}
+.container{
+    background-color: black;
+    width: 940px;
+}
+.logo{
+    text-align: center;
+    height: 100px;
+}
+ul.navigation{
+    padding:0px;
+    margin: 0px;
+    width: 100%;
+    list-style: none;
+}
+ul.navigation li {
+    display: inline-block;
+    padding: 5px 10px;
+}
+ul.navigation li a{
+    text-decoration: none;
+    color:#7b7979;
+    font-weight: bold;
+}
+ul.navigation li.active a{
+    color:#b9315a;
+}
+ul.navigation li a:hover {
+    color:#b9315a;
+    text-decoration: none;
+}

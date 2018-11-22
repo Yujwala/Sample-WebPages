@@ -1,0 +1,248 @@
+<html>
+<head>
+  <title>UX Mastery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../thirdparty/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../stylesheets/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/main.css">
+
+  <script type="text/javascript" src="../thirdparty/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $("#submit").click(function(e) {
+                var valid = true;
+
+                if ($('#firstname').val() == '') {
+                   $("#error1").fadeIn();
+                   valid = false;
+                }
+
+                if ($('#lastname').val() == '') {
+                   $("#error2").fadeIn();
+                   valid = false;
+                }    
+
+                if ($('#emailid').val() == '') {
+                   $("#error3").fadeIn();
+                   valid = false;
+                } 
+   
+  });
+
+            
+        });
+    </script>
+</head>
+    <body>
+    <div class="container">
+        <div class="header">
+            <div class="header-content">
+                    <img class="logo" src= "../images/logo.png" alt="logo"/>
+                <span class="headerText">We help user experience professionals <br> get started and get better</span>
+            </div>
+            <nav class="navbar" id="myNavbar">
+                    <a href="#">Home</a>
+	                <a href="#">Get Started</a>
+	                <a href="#">Community</a>
+                    <div class="dropdown">
+                        <button class="dropbtn">Articles 
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#">All Articles</a>
+                            <a href="#">Ask The UXperts</a>
+                            <a href="#">Career Advice</a>
+                            <a href="#">UX Tutorials</a>
+                            <a href="#">UX books</a>
+                        </div>
+                    </div> 
+                   <div class="dropdown">
+                        <button class="dropbtn">Resources 
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#">UX process</a>
+                            <a href="#">UX books</a>
+                            <a href="#">UX coursese</a>
+                            <a href="#">UX degree</a>
+                            <a href="#">UX games</a>
+                        </div>
+                    </div>
+                    <a href="#">Store</a> 
+                    <a href="#">About</a> 
+                    <a href="#">UX training </a>
+
+            </nav>
+        </div>
+        <div class="wrapper">
+        <div class="header-note">
+            <a class="home" href="#"><span class="fa fa-home"></span></a>
+            <span class="fa fa-angle-double-right"></span>
+            <a href="#" class="resources"> Resources </a>
+            <span class="fa fa-angle-double-right"></span>
+            <span class="currentpage"> UX Templates </span>
+        </div>
+        <div class="row">
+        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+          <h1 class="heading">UX Templates </h1>
+          <h3>Ever feel like you’re reinventing the wheel on each project that you tackle?</h3>
+            <p>Consider using one of the templates below. Whether it’s a framework upon which to prototype your mobile app, a script to use as the basis for your user testing sessions, or a printout of some simple panels to make your scribbled storyboard quicker to produce, you’re bound to find something in this list of UX templates.<br><br>
+            Note that while it can be helpful to leverage the work of others, these UX templates are tools to help you structure your thinking, not a substitute for research, testing, or creativity. Also, please refer to the individual usage policy for each template. <br><br>
+            There are probably tons of UX templates that we’ve missed—if you’re aware of a template that you think we should include here, <span><a class="links" href="#">let us know!</a></span></p>
+            
+            <h2>High-fidelity Templates</h2>
+            <ul>
+                <li><a class="links" href="#">Keynotopia</a></li>
+                <li><a class="links" href="#">PSD UI Kits</a></li>
+                <li><a class="links" href="#">Android UI Design Kit</a></li>
+                <li><a class="links" href="#">Sketch.app UI templates</a></li>
+                <li><a class="links" href="#">Mobile templates for Sketch</a></li>
+            </ul>
+            <h2>Low-fidelity Templates</h2>
+            <ul>
+                <li><a class="links" href="#">Mockups To Go</a></li>
+                <li><a class="links" href="#">Yahoo Design Pattern Library Stencils</a></li>
+                
+            </ul>
+             <h2>Sketch Templates</h2>
+            <ul>
+                <li><a class="links" href="#">Konigi Graph Paper</a></li>
+                <li><a class="links" href="#">EightShapes Unify</a></li>
+                <li><a class="links" href="#">Interactive Sketching Notation</a></li>
+                <li><a class="links" href="#">ZURB responsive sketchsheets</a></li>
+                <li><a class="links" href="#">SneakPeekIt</a></li>
+                
+            </ul>
+            <h2>Usability Testing</h2>
+            <ul>
+                <li><a class="links" href="#">Usability Testing Script</a><span> by Steve Krug</span></li>
+                <li><a class="links" href="#">Recording Consent Form</a><span> by Steve Krug</span></li>
+                <li><a class="links" href="#">Checklists</a><span> by Steve Krug</span></li>
+                <li><a class="links" href="#">Instructions for Observers</a><span> by Steve Krug</span></li>
+                <li><a class="links" href="#">Hall Monitor’s Guide</a><span> by Steve Krug</span></li>
+                <li><a class="links" href="#">More usability document templates</a><span> from usability.gov</span></li>
+                
+            </ul>
+            <h2>Related</h2>
+            <ul>
+                <li><p><span><a class="links" href="#">UXPin,</a></span> a collaborative app that includes stencils for creating wireframes and low-fidelity prototypes </p></li>
+                <li><p>An <span><a class="links" href="#">excellent collection of useful documents</a></span> from the Usability SIG at the Society for Technical Communication</p></li>
+            </ul>
+        
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <div class="panel-aside">
+                    <h3 class="panel-title">Search uxmastery.com:</h3>
+                    <div class="panel-text searchbox">
+                        <form>
+                            <input type="text" class="form-control" placeholder="Search the site..">
+                            <span class="glyphicon glyphicon-search"></span> 
+                            <span class="fa fa-search"></span>
+                        </form> 
+                    </div>
+                </div>
+        <div class="picture">
+            <a href="#">
+                <img class="img-responsive" src='../images/joincommunity.png' onmouseover="this.src='../images/joincommunity-hover.png'" onmouseout="this.src='../images/joincommunity.png'"></a>
+        </div>
+           <div class="panel-aside">
+                    <h3 class="panel-title">UX Resources</h3>
+                    <div class="panel-text">
+                       <ul>
+                           <li class="panel-links">UX Books</li>
+                           <li class="panel-links">UX Conferences</li>
+                           <li class="panel-links">UX Courses</li>
+                           <li class="panel-links">UX Degrees</li>
+                           <li class="panel-links">UX Games</li>
+                           <li class="panel-links">UX Glossary</li>
+                           <li class="panel-links">UX Newsletter</li>
+                           <li class="panel-links">UX Podcast</li>
+                           <li class="panel-links">UX Process</li>
+                           <li class="panel-links">UX Techniques</li>
+                           <li class="panel-links">UX Templates</li>
+                           <li class="panel-links">UX Tools</li>
+                        </ul> 
+                    </div>
+                </div>   
+        </div>
+        </div>
+            <div class="row contact">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 contact-details">
+                <h3>We are 24/7 available at your services.</h3>
+                    <p>Contact us @</p>
+                    <table>
+                    <td> 
+                        Street:<br>
+                        City: <br>
+                        State: <br>
+                        Zip Code: <br>
+                        Phone number: <br>
+                    </td>
+                    <td>
+                     32, Capital Commercial Center, Ashram Road. <br>
+                     Ahmedabad. <br>
+                     Full Gujarat. <br>
+                     380006. <br>
+                     07926577717. <br>
+                     </td>
+                        
+                    </table>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 share-details">
+                    <h3>Share your details with us.</h3>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-2 col-sm-2 col-xs-12">
+                    <label class="label-title">FirstName</label>
+                        </div>
+                        <div class= "col-lg-8 col-md-4 col-sm-4 col-xs-12">
+                    <input type="text" id="firstname" value="" placeholder="Enter your firstname" class="form-control required"/>
+                            <p id="error1"class="error-message">Please enter Firstname</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-2 col-sm-2 col-xs-12">
+                    <label class="label-title">LastName</label>
+                        </div>
+                        <div class= "col-lg-8 col-md-4 col-sm-4 col-xs-12">
+                    <input type="text" id="lastname" value="" placeholder="Enter your lastName" class="form-control required"/>
+                            <p id="error2" class="error-message">Please enter Lastname</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-2 col-sm-2 col-xs-12">
+                    <label class="label-title">Email Address</label>
+                        </div>
+                        <div class= "col-lg-8 col-md-4 col-sm-4 col-xs-12">
+                    <input type="text" id="emailid" value="" placeholder="Enter your email-id" class="form-control required"/>
+                            <p id="error3" class="error-message">Please enter email-id</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-8 offset-lg-4">
+                        <input type="submit" value="Submit" id="submit">
+                        </div>
+                    
+                    </div>
+                </div>
+        </div>
+            <footer class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="social-media">
+                    <ul class="icons">
+                    <li><a href="#" class="fa fa-facebook"></a></li>
+                    <li><a href="#" class="fa fa-twitter"></a></li>
+                    <li><a href="#" class="fa fa-google"></a></li>
+                    <li><a href="#" class="fa fa-linkedin"></a></li>
+                    <li><a href="#" class="fa fa-youtube"></a></li>
+                    </ul>
+                    
+                </div>
+                <div class="footer-note">
+                    <p>Copyright © 2012-2017 UX Mastery & Co Pty Ltd. All rights reserved.<br><span><a href="#">Privacy</a> | <a href="#"> Terms</a></span></p>
+                </div>
+                <div class="hello_image">
+                    <img src="../images/hello.png" alt="hello"/>
+                </div>
+            </footer>
+        </div>
+        </div>
+    </body>
